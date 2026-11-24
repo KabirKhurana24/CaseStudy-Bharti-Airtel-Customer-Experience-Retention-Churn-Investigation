@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A research-led case study on customer experience, retention and churn in Bharti Airtel India Mobile Services.">
+<title>Bharti Airtel | Customer Experience & Retention Case Study</title>
+<style>
+:root{--ink:#151515;--muted:#666;--line:#e6e4e1;--paper:#fff;--wash:#f7f6f4;--red:#d8242f;--red2:#a91925;--blue:#263c55;--green:#26724c;--amber:#9b6413;--max:1180px;--shadow:0 12px 36px rgba(0,0,0,.055)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.62 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}a{color:inherit;text-decoration-color:#b8b8b8;text-underline-offset:3px}a:hover{color:var(--red)}.wrap{max-width:var(--max);margin:auto;padding:0 28px}.topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.topin{height:68px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.04em}.mark{width:28px;height:28px;border-radius:8px;background:var(--red);display:grid;place-items:center;color:white;font-size:14px;font-weight:900}.brand small{display:block;font-size:10px;letter-spacing:.15em;color:var(--muted);font-weight:700;margin-top:-3px}.nav{display:flex;align-items:center;gap:20px;font-size:12px;color:#484848}.nav a{text-decoration:none}.nav a:hover{color:var(--red)}.pill{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:999px;padding:5px 10px;font-size:11px;color:#494949;background:white}.dot{width:7px;height:7px;border-radius:50%;background:var(--green)}
+.hero{padding:76px 0 52px;background:linear-gradient(180deg,#fbfaf9 0%,#fff 100%);border-bottom:1px solid var(--line)}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-weight:800}.hero-grid{display:grid;grid-template-columns:1.32fr .68fr;gap:56px;align-items:end}.hero h1{font-size:clamp(40px,6vw,70px);line-height:1.02;letter-spacing:-.065em;margin:18px 0 22px;max-width:790px;font-weight:760}.hero h1 span{color:var(--red)}.lead{font-size:19px;line-height:1.55;max-width:720px;color:#454545;margin:0 0 24px}.meta{display:flex;gap:10px;flex-wrap:wrap}.hero-note{border-left:3px solid var(--red);padding:4px 0 4px 18px;color:#555;font-size:13px}.hero-note strong{color:var(--ink);display:block;font-size:13px;margin-bottom:5px}.hero-note p{margin:0 0 12px}.hero-note p:last-child{margin-bottom:0}.container{max-width:var(--max);margin:auto;padding:0 28px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:-1px;padding:24px 0 32px}.metric{border:1px solid var(--line);border-radius:13px;padding:17px 18px;background:#fff;box-shadow:var(--shadow)}.metric .num{font-size:30px;font-weight:780;letter-spacing:-.055em;line-height:1.1}.metric .label{font-size:12px;color:#555;margin-top:9px}.metric .tag{font-size:10px;color:var(--muted);margin-top:8px}.metric.accent{border-top:3px solid var(--red)}
+.layout{display:grid;grid-template-columns:225px minmax(0,1fr);gap:48px;padding-top:34px;padding-bottom:90px}.toc{position:sticky;top:90px;align-self:start;max-height:calc(100vh - 110px);overflow:auto;border-right:1px solid var(--line);padding:2px 18px 18px 0}.toc h3{font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:#888;margin:0 0 14px}.toc a{display:block;text-decoration:none;color:#555;font-size:12px;padding:7px 9px;border-radius:7px;margin:2px 0}.toc a:hover,.toc a.active{background:#f7eeee;color:var(--red)}main{min-width:0}.section{padding:0 0 55px;margin:0 0 52px;border-bottom:1px solid var(--line)}.section:last-child{border-bottom:0}.section-head{display:flex;align-items:flex-start;gap:15px;margin-bottom:22px}.section-no{font-size:12px;color:var(--red);font-weight:800;padding-top:7px;letter-spacing:.08em}.section h2{font-size:31px;line-height:1.14;letter-spacing:-.045em;margin:0;font-weight:760}.section .sub{margin:9px 0 0;color:#666;max-width:760px;font-size:14px}.section h3{font-size:18px;letter-spacing:-.02em;margin:27px 0 11px}.section p{color:#424242;margin:0 0 14px}.section strong{color:#151515}.callout{padding:17px 19px;border-left:3px solid var(--red);background:#faf6f5;border-radius:0 10px 10px 0;margin:19px 0;color:#383838;font-size:14px}.callout strong{display:block;margin-bottom:5px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:15px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.card{border:1px solid var(--line);border-radius:13px;background:white;padding:18px;box-shadow:var(--shadow)}.card h4{margin:0 0 8px;font-size:14px;letter-spacing:-.01em}.card p{font-size:13px;margin:0;color:#5a5a5a}.small{font-size:12px!important;color:#666}.chartbox{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff;margin:18px 0;box-shadow:var(--shadow)}.charttitle{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:10px}.charttitle strong{font-size:14px}.charttitle span{font-size:10px;color:#777}.chartbox svg{width:100%;height:auto;display:block;overflow:visible}.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11px;color:#666;margin-top:8px}.swatch{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px}.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:12px;margin:16px 0}.tbl{border-collapse:collapse;width:100%;min-width:620px;font-size:12px}.tbl th{text-align:left;background:#f7f6f4;color:#444;font-weight:700;padding:11px 12px;border-bottom:1px solid var(--line)}.tbl td{padding:11px 12px;border-bottom:1px solid #efeeec;color:#424242;vertical-align:top}.tbl tr:last-child td{border-bottom:0}.tbl td:first-child{font-weight:650;color:#202020}.tag{display:inline-block;border:1px solid var(--line);border-radius:4px;padding:2px 6px;font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:#555;white-space:nowrap}.tag.fact{background:#edf4f0;border-color:#cfe2d7;color:#226344}.tag.analysis{background:#eef2f6;border-color:#d4dce6;color:#35506d}.tag.hyp{background:#fff6e9;border-color:#f1dfbd;color:#8a5a11}.tag.assume{background:#f8eded;border-color:#eed0d0;color:#a3242c}.tag.gap{background:#f1f1f1;color:#606060}.bars{display:grid;gap:10px;margin:16px 0}.barrow{display:grid;grid-template-columns:165px 1fr 62px;gap:12px;align-items:center;font-size:12px}.bartrack{height:9px;background:#f0efed;border-radius:10px;overflow:hidden}.barfill{height:100%;border-radius:10px;background:var(--red)}.barvalue{text-align:right;font-weight:700}.flow{display:flex;align-items:stretch;gap:7px;flex-wrap:wrap;margin:17px 0}.flow .node{flex:1 1 135px;min-width:110px;background:#f8f7f5;border:1px solid var(--line);border-radius:9px;padding:12px;font-size:12px;font-weight:650}.flow .node em{font-style:normal;color:var(--red);font-size:10px;display:block;margin-bottom:5px}.arrow{display:grid;place-items:center;color:#a2a2a2;font-size:17px}.evidence{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.ev{padding:14px 15px;border:1px solid var(--line);border-radius:10px}.ev h4{margin:0 0 6px;font-size:12px}.ev p{font-size:12px;margin:0;color:#5b5b5b}.segment{border:1px solid var(--line);border-radius:12px;padding:15px}.segment .id{font-size:10px;color:var(--red);font-weight:800;letter-spacing:.12em}.segment h4{font-size:14px;margin:6px 0}.segment p{font-size:12px;margin:0 0 7px}.segment small{font-size:11px;color:#666}.timeline{border-left:2px solid #e6d1d2;margin:18px 0 0 8px;padding-left:22px}.phase{position:relative;padding:0 0 25px}.phase:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--red);left:-28px;top:5px}.phase h4{margin:0 0 5px;font-size:14px}.phase p{font-size:13px;margin:0}.disclaimer{background:#f7f6f4;border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:20px}.disclaimer h3{margin:0 0 8px;font-size:14px}.disclaimer p{font-size:12px;margin:0 0 8px}.sources li{font-size:12px;color:#555;margin:7px 0;overflow-wrap:anywhere}.footer{padding:25px 0;border-top:1px solid var(--line);font-size:11px;color:#777}.btn{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:white;border-radius:7px;padding:10px 14px;text-decoration:none;font-size:12px;font-weight:700}.btn:hover{background:var(--red2);color:white}.toplink{font-size:11px;color:#777;text-decoration:none}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:25px}.metrics{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr;gap:24px}.toc{position:relative;top:auto;max-height:none;border-right:0;border-bottom:1px solid var(--line);padding:0 0 15px;display:flex;flex-wrap:wrap;gap:4px}.toc h3{width:100%;margin-bottom:5px}.toc a{padding:6px 8px}.nav{display:none}.grid3{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.wrap,.container{padding:0 18px}.hero{padding:52px 0 35px}.hero h1{font-size:43px}.lead{font-size:16px}.metrics{grid-template-columns:1fr 1fr;gap:8px}.metric{padding:13px}.metric .num{font-size:24px}.section h2{font-size:26px}.grid2,.grid3,.evidence{grid-template-columns:1fr}.barrow{grid-template-columns:115px 1fr 48px}.topin{height:60px}}
+@media print{.topbar,.toc,.btn{display:none!important}.layout{display:block;padding-top:20px}.hero{padding:30px 0}.section{break-inside:avoid}.card,.metric,.chartbox{box-shadow:none}body{font-size:11pt}.wrap,.container{max-width:none;padding:0 14mm}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap topin">
+  <a class="brand" href="#top" style="text-decoration:none"><span class="mark">A</span><span>AIRTEL CASE STUDY<small>INDIA MOBILE SERVICES</small></span></a>
+  <nav class="nav"><a href="#overview">Overview</a><a href="#evidence">Evidence</a><a href="#diagnosis">Diagnosis</a><a href="#solution">Proposed solution</a><a href="#economics">Business case</a><a href="#roadmap">Roadmap</a></nav>
+  <a class="toplink" href="#sources">Sources & limitations ↗</a>
+</div></header>
+<div id="top" class="hero"><div class="container hero-grid">
+  <div>
+    <div class="eyebrow">Customer experience · Retention · Churn investigation</div>
+    <h1>Turning customer signals into <span>lasting relationships.</span></h1>
+    <p class="lead">A public-evidence assessment of Bharti Airtel’s India Mobile Services business, examining why customer churn rose, where customer experience may be breaking down, and how a more proactive retention model could respond.</p>
+    <div class="meta"><span class="pill"><i class="dot"></i> Research capstone</span><span class="pill">Research cut-off: November 2026</span><span class="pill">51-page source report</span></div><div class="meta" style="margin-top:18px"><a class="btn" href="Bharti_Airtel_Case_Study_Summary.html">Read the plain-language summary ↗</a><a class="toplink" href="Bharti_Airtel_Case_Study_Summary.txt" download>Download summary (.txt)</a></div>
+  </div>
+  <aside class="hero-note">
+    <strong>What this study is about</strong>
+    <p>Airtel’s monetisation is strong, but higher ARPU does not automatically mean stronger retention. The study connects pricing, network experience, recharge friction and support recovery to a practical customer-retention proposal.</p>
+    <strong>Scope</strong>
+    <p>India Mobile Services. Public company disclosures, regulatory information and third-party benchmarks. Internal subscriber-level data is not available in the source report.</p>
+  </aside>
+</div></div>
+<div class="container"><div class="metrics">
+  <div class="metric accent"><div class="num">2.9%</div><div class="label">Monthly mobile churn · Q2 FY27</div><div class="tag">Verified in source report</div></div>
+  <div class="metric"><div class="num">₹271</div><div class="label">Blended mobile ARPU · Q2 FY27</div><div class="tag">Verified in source report</div></div>
+  <div class="metric"><div class="num">377.2m</div><div class="label">India mobile subscriber base</div><div class="tag">Q2 FY27 · Source report</div></div>
+  <div class="metric"><div class="num">61.0%</div><div class="label">India Mobile EBITDA margin</div><div class="tag">Q2 FY27 · Source report</div></div>
+</div></div>
+<div class="container layout">
+<aside class="toc"><h3>On this page</h3>
+<a href="#overview">01 · Executive overview</a><a href="#business">02 · Business context</a><a href="#trend">03 · Performance trend</a><a href="#journey">04 · Customer journey</a><a href="#evidence">05 · Evidence & research</a><a href="#diagnosis">06 · Root cause assessment</a><a href="#segments">07 · Customer segments</a><a href="#solution">08 · CX-RI proposal</a><a href="#requirements">09 · Requirements</a><a href="#economics">10 · Financial case</a><a href="#measurement">11 · KPIs & UAT</a><a href="#roadmap">12 · Roadmap</a><a href="#conclusion">13 · Recommendations</a><a href="#sources">14 · Sources & caveats</a>
+</aside>
+<main>
+<section class="section" id="overview">
+  <div class="section-head"><div class="section-no">01</div><div><h2>Executive overview</h2><p class="sub">Airtel is performing well on monetisation. The retention challenge is to protect that value without relying on broad discounts or aggressive selling.</p></div></div>
+  <p>The report highlights a tension in Airtel’s India mobile business. In Q2 FY27, mobile revenue reached ₹30,943.1 crore, monthly ARPU was ₹271 and the segment EBITDA margin was 61.0%. At the same time, monthly churn increased from 2.6% in Q1 FY27 to 2.9% in Q2 FY27, while quarterly net mobile additions fell from approximately 3.3 million to 0.7 million.</p>
+  <p>The study focuses on the customer experiences that may sit behind this movement: a prepaid plan change, differences in indoor 5G experience, failed recharge journeys, repeat support contacts and weak links between network operations and customer care.</p>
+  <div class="callout"><strong>The competitive tension</strong>The source report compares Airtel’s 2.9% Q2 FY27 monthly churn with Jio’s 1.61% reported for Q1 FY27, while Airtel’s ₹271 ARPU is above the ₹218.8 Jio comparison cited in the study. These are not same-quarter observations, so the gap should be treated as the report’s directional benchmark rather than a perfectly matched peer comparison.</div>
+  <div class="callout"><strong>Core conclusion</strong>The opportunity is not simply to offer more retention discounts. It is to identify a customer’s problem early, resolve the problem through the right channel, check that the customer is eligible to be contacted, and measure whether the intervention actually prevented churn.</div>
+  <div class="grid3">
+    <div class="card"><h4>Protect value</h4><p>Focus on durable retention and customer lifetime value, not just gross SIM activations or short-term ARPU.</p></div>
+    <div class="card"><h4>Fix the experience</h4><p>Prioritise recharge recovery, network issue communication and repeat-complaint escalation.</p></div>
+    <div class="card"><h4>Prove the impact</h4><p>Use a randomized holdout group to distinguish genuinely retained customers from customers who would have stayed anyway.</p></div>
+  </div>
+</section>
+
+<section class="section" id="business">
+  <div class="section-head"><div class="section-no">02</div><div><h2>Business context</h2><p class="sub">A high-volume prepaid base, a smaller but growing postpaid business and a multi-touchpoint service model.</p></div></div>
+  <p>Airtel’s mobile business serves two economically different groups. Prepaid customers make up most of the mobile base and actively decide when to recharge. Postpaid customers pay after usage and may have more services attached to their account. The source report estimates the Q2 FY27 mix at approximately 346 million prepaid subscribers and 31.2 million postpaid subscribers.</p>
+  <div class="chartbox"><div class="charttitle"><strong>India mobile customer mix</strong><span>Q2 FY27 · derived from source report</span></div>
+    <svg viewBox="0 0 720 116" role="img" aria-label="Stacked bar showing 91.7 percent prepaid and 8.3 percent postpaid">
+      <rect x="10" y="25" width="700" height="34" rx="7" fill="#eee"/><rect x="10" y="25" width="642" height="34" rx="7" fill="#d8242f"/><rect x="652" y="25" width="58" height="34" rx="7" fill="#263c55"/>
+      <text x="10" y="18" font-size="12" fill="#555">Prepaid 91.7%</text><text x="710" y="18" text-anchor="end" font-size="12" fill="#555">Postpaid 8.3%</text>
+      <text x="25" y="47" font-size="13" font-weight="700" fill="#fff">~346.0m</text><text x="681" y="47" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">31.2m</text>
+      <text x="10" y="84" font-size="11" fill="#555">Prepaid: recharge-cycle decisions and price sensitivity are central to the retention model.</text>
+      <text x="10" y="101" font-size="11" fill="#555">Postpaid: billing quality, service recovery and household convergence can influence retention.</text>
+    </svg>
+  </div>
+  <h3>How the business creates value</h3>
+  <div class="flow">
+    <div class="node"><em>01 · Acquire</em>Retail, digital and MNP port-in</div><div class="arrow">→</div>
+    <div class="node"><em>02 · Activate</em>KYC, SIM activation and onboarding</div><div class="arrow">→</div>
+    <div class="node"><em>03 · Serve</em>Network, recharge, billing and app</div><div class="arrow">→</div>
+    <div class="node"><em>04 · Support</em>Self-service, 198 and escalation</div><div class="arrow">→</div>
+    <div class="node"><em>05 · Retain</em>Renewal, upgrade and convergence</div>
+  </div>
+  <p class="small">The process above is a simplified representation of the customer lifecycle described in the source report (pages 7–10). It is not a claim about Airtel’s internal systems architecture.</p>
+</section>
+
+<section class="section" id="trend">
+  <div class="section-head"><div class="section-no">03</div><div><h2>What changed in the numbers?</h2><p class="sub">The key signal is a rise in churn at the same time as net additions slowed sharply.</p></div></div>
+  <div class="chartbox"><div class="charttitle"><strong>Reported monthly churn trend</strong><span>Percent · quarterly observations reproduced from source report</span></div>
+    <svg viewBox="0 0 760 290" role="img" aria-label="Quarterly monthly churn trend from Q1 FY25 to Q2 FY27">
+      <g stroke="#e8e6e3" stroke-width="1"><line x1="62" y1="36" x2="730" y2="36"/><line x1="62" y1="86" x2="730" y2="86"/><line x1="62" y1="136" x2="730" y2="136"/><line x1="62" y1="186" x2="730" y2="186"/><line x1="62" y1="236" x2="730" y2="236"/></g>
+      <g fill="#6b6b6b" font-size="11"><text x="22" y="40">3.4</text><text x="22" y="90">3.0</text><text x="22" y="140">2.6</text><text x="22" y="190">2.2</text><text x="22" y="240">1.8</text></g>
+      <polyline fill="none" stroke="#d8242f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" points="78,111 151,61 224,149 297,174 370,124 443,99 516,161 589,111 662,74"/>
+      <g fill="#d8242f" stroke="white" stroke-width="2"><circle cx="78" cy="111" r="5"/><circle cx="151" cy="61" r="5"/><circle cx="224" cy="149" r="5"/><circle cx="297" cy="174" r="5"/><circle cx="370" cy="124" r="5"/><circle cx="443" cy="99" r="5"/><circle cx="516" cy="161" r="5"/><circle cx="589" cy="111" r="5"/><circle cx="662" cy="74" r="6"/></g>
+      <g font-size="11" fill="#333" text-anchor="middle"><text x="78" y="98">2.8%</text><text x="151" y="48">3.2%</text><text x="224" y="136">2.5%</text><text x="297" y="161">2.3%</text><text x="370" y="111">2.7%</text><text x="443" y="86">2.9%</text><text x="516" y="148">2.4%</text><text x="589" y="98">2.6%</text><text x="662" y="61" font-weight="700">2.9%</text></g>
+      <g fill="#666" font-size="10" text-anchor="middle"><text x="78" y="258">Q1 FY25</text><text x="151" y="258">Q2 FY25</text><text x="224" y="258">Q3 FY25</text><text x="297" y="258">Q4 FY25</text><text x="370" y="258">Q1 FY26</text><text x="443" y="258">Q2 FY26</text><text x="516" y="258">Q4 FY26</text><text x="589" y="258">Q1 FY27</text><text x="662" y="258">Q2 FY27</text></g>
+      <text x="662" y="280" text-anchor="middle" font-size="10" fill="#d8242f">Latest point in report</text>
+    </svg><div class="legend"><span><i class="swatch" style="background:#d8242f"></i>Monthly churn</span><span>Q3 FY26 not included: source report marks it as a data gap.</span></div>
+  </div>
+  <div class="chartbox"><div class="charttitle"><strong>ARPU increased over the same period</strong><span>₹ per user per month · source report</span></div>
+    <svg viewBox="0 0 760 210" role="img" aria-label="ARPU values rising from 211 in Q1 FY25 to 271 in Q2 FY27">
+      <g stroke="#e8e6e3"><line x1="60" y1="32" x2="730" y2="32"/><line x1="60" y1="82" x2="730" y2="82"/><line x1="60" y1="132" x2="730" y2="132"/></g>
+      <polyline fill="none" stroke="#263c55" stroke-width="3.5" stroke-linejoin="round" points="78,132 151,99 224,79 297,79 370,69 443,56 516,51 589,45 662,32"/>
+      <g fill="#263c55" stroke="#fff" stroke-width="2"><circle cx="78" cy="132" r="5"/><circle cx="151" cy="99" r="5"/><circle cx="224" cy="79" r="5"/><circle cx="297" cy="79" r="5"/><circle cx="370" cy="69" r="5"/><circle cx="443" cy="56" r="5"/><circle cx="516" cy="51" r="5"/><circle cx="589" cy="45" r="5"/><circle cx="662" cy="32" r="6"/></g>
+      <g font-size="11" fill="#263c55" text-anchor="middle"><text x="78" y="119">211</text><text x="151" y="86">233</text><text x="224" y="66">245</text><text x="297" y="66">245</text><text x="370" y="56">250</text><text x="443" y="43">256</text><text x="516" y="38">257</text><text x="589" y="32">264</text><text x="662" y="19" font-weight="700">271</text></g>
+      <g font-size="10" fill="#666" text-anchor="middle"><text x="78" y="165">Q1 FY25</text><text x="151" y="165">Q2 FY25</text><text x="224" y="165">Q3 FY25</text><text x="297" y="165">Q4 FY25</text><text x="370" y="165">Q1 FY26</text><text x="443" y="165">Q2 FY26</text><text x="516" y="165">Q4 FY26</text><text x="589" y="165">Q1 FY27</text><text x="662" y="165">Q2 FY27</text></g>
+      <text x="60" y="195" font-size="10" fill="#777">Q3 FY26 ARPU is shown as a data gap in the source report.</text>
+    </svg>
+  </div>
+  <div class="grid2">
+    <div class="card"><h4>Net additions slowed</h4><p>Quarterly net mobile additions moved from approximately 3.3 million in Q1 FY27 to 0.7 million in Q2 FY27, a reported 79% quarter-on-quarter decline.</p></div>
+    <div class="card"><h4>Churn is a recurring operating load</h4><p>The report calculates roughly 10.94 million monthly disconnections by applying 2.9% to the 377.2 million base. This is an arithmetic estimate, not a separately reported count.</p></div>
+  </div>
+  <div class="callout"><strong>Interpretation</strong>ARPU growth and churn can move in different directions. A business can improve monetisation per user while still replacing a large number of disconnected customers. The report therefore argues for measuring retained value, not ARPU alone.</div>
+</section>
+
+<section class="section" id="journey">
+  <div class="section-head"><div class="section-no">04</div><div><h2>Where the customer experience can break</h2><p class="sub">The report maps seven lifecycle stages and pays particular attention to the moments when a problem becomes a reason to switch.</p></div></div>
+  <div class="flow">
+    <div class="node"><em>01</em>Acquisition & port-in</div><div class="arrow">→</div><div class="node"><em>02</em>KYC & onboarding</div><div class="arrow">→</div><div class="node"><em>03</em>First 30-day habit</div><div class="arrow">→</div><div class="node"><em>04</em>Usage & recharge</div>
+  </div>
+  <div class="flow">
+    <div class="node"><em>05</em>Support & service recovery</div><div class="arrow">↔</div><div class="node"><em>06</em>Upgrade & convergence</div><div class="arrow">→</div><div class="node"><em>07</em>Lapse, port-out or win-back</div>
+  </div>
+  <h3>Three moments that deserve attention</h3>
+  <div class="grid3">
+    <div class="card"><h4>Recharge and plan renewal</h4><p>A failed payment, a changed pack or a price step-up can create an immediate choice to recharge less, use a secondary SIM or switch.</p></div>
+    <div class="card"><h4>Network degradation</h4><p>A customer who repeatedly experiences weak indoor coverage may not know whether the problem is local, temporary or likely to be fixed.</p></div>
+    <div class="card"><h4>Complaint and escalation</h4><p>Repeated contacts without a clear resolution can turn a service issue into a relationship issue—particularly for valuable customers.</p></div>
+  </div>
+  <h3>Service blueprint: what the customer sees and what needs to happen behind it</h3>
+  <div class="tablewrap"><table class="tbl"><thead><tr><th>Layer</th><th>Recharge failure</th><th>Indoor network issue</th><th>Repeat complaint</th></tr></thead><tbody>
+    <tr><td>Customer action</td><td>Retries payment or delays renewal.</td><td>Moves location, switches network mode or uses another SIM.</td><td>Contacts support again or considers porting.</td></tr>
+    <tr><td>Frontstage</td><td>Clear retry link and pack details.</td><td>Outage status, ETA and practical Wi-Fi calling help.</td><td>Direct route to an agent who can see prior history.</td></tr>
+    <tr><td>Backstage</td><td>Payment reconciliation and failure reason.</td><td>Network telemetry and incident correlation.</td><td>Ticket history, billing and network context joined together.</td></tr>
+    <tr><td>Control and measurement</td><td>Recovery rate within 24 hours.</td><td>Alert coverage and issue resolution.</td><td>Repeat-contact rate and verified resolution.</td></tr>
+  </tbody></table></div>
+</section>
+
+<section class="section" id="evidence">
+  <div class="section-head"><div class="section-no">05</div><div><h2>Evidence and research approach</h2><p class="sub">The report separates what can be seen publicly from what requires internal Airtel data.</p></div></div>
+  <p>The research uses quarterly company reporting, TRAI subscription and MNP releases, independent network benchmarks and a pricing-event timeline. It does not claim access to Airtel’s subscriber CRM, network event logs, call recordings or app review corpus.</p>
+  <div class="evidence">
+    <div class="ev"><h4><span class="tag fact">Verified fact</span></h4><p>Directly reported company, regulatory or benchmark information reproduced in the source study.</p></div>
+    <div class="ev"><h4><span class="tag analysis">Analytical finding</span></h4><p>A calculation or comparison derived from reported figures, with the calculation logic described.</p></div>
+    <div class="ev"><h4><span class="tag hyp">Research-based hypothesis</span></h4><p>A plausible explanation that needs to be tested with customer-level or operational data.</p></div>
+    <div class="ev"><h4><span class="tag assume">Illustrative assumption</span></h4><p>A hypothetical input used to model customer value, programme costs or expected benefits.</p></div>
+    <div class="ev"><h4><span class="tag gap">Data gap</span></h4><p>Information not available in public sources but necessary to establish a baseline or causal result.</p></div>
+  </div>
+  <h3>What the research could and could not establish</h3>
+  <div class="grid2">
+    <div class="card"><h4>Available publicly</h4><p>Quarterly blended churn and ARPU, subscriber base, net additions, segment revenue and EBITDA, industry MNP totals, third-party network awards and notified customer-protection requirements.</p></div>
+    <div class="card"><h4>Requires internal validation</h4><p>Prepaid versus postpaid churn, circle-level port-outs, complaint reason codes, first-contact resolution, recharge failure rates, network signal at subscriber level, customer lifetime value and campaign incrementality.</p></div>
+  </div>
+  <h3>Public customer voice framework</h3>
+  <p>The report defines six themes for coding public feedback: tariff and pack changes; indoor 5G availability; support and escalation; Airtel Thanks app and payment friction; spam and consent fatigue; postpaid billing and roaming. It explicitly states that an auditable review corpus and verified review distributions were not available. No review counts or sentiment percentages are invented.</p>
+</section>
+
+<section class="section" id="diagnosis">
+  <div class="section-head"><div class="section-no">06</div><div><h2>Root cause assessment</h2><p class="sub">The report identifies a set of evidence-backed signals and hypotheses to test—not a claim that every suspected cause has been proven.</p></div></div>
+  <div class="tablewrap"><table class="tbl"><thead><tr><th>Potential driver</th><th>Evidence in the report</th><th>Interpretation</th><th>What must be tested</th></tr></thead><tbody>
+    <tr><td>Prepaid plan rationalisation</td><td>₹299 plan withdrawn in August 2026; report records a move to ₹349 and reinstatement on 6 November 2026. Churn rose from 2.6% to 2.9% in Q2 FY27.</td><td>Timing is consistent with a price/value shock, but does not alone prove that the pack change caused the full churn movement.</td><td>Circle and cohort-level renewal, port-out and net-add data around the change, with matched controls.</td></tr>
+    <tr><td>Indoor 5G experience</td><td>Report compares third-party network awards and discusses Jio’s 700 MHz 5G SA position against Airtel’s NSA deployment context.</td><td>Indoor coverage and 5G continuity may be an important churn signal in selected locations.</td><td>Join customer complaints, location-level RAN telemetry, device capability and port-out records.</td></tr>
+    <tr><td>Support handoffs</td><td>Report describes the 198-to-Appellate escalation process and proposes routing repeat contacts to a unified agent view.</td><td>Repeated contacts may indicate that tickets are being closed without a customer-confirmed resolution.</td><td>Ticket reopen rates, repeat-contact rates, resolution codes and subsequent churn.</td></tr>
+    <tr><td>Recharge and digital friction</td><td>Report discusses RBI 2FA checkout friction and Airtel Thanks as a multi-service app.</td><td>Payment failures or a cluttered renewal path may create avoidable lapse risk.</td><td>Payment funnel events, transaction failure reason and 24-hour recovery by pack and customer cohort.</td></tr>
+    <tr><td>Dual-SIM dormancy</td><td>Report identifies silent use decline as a telecom-specific churn mechanism.</td><td>A subscriber can stop actively recharging Airtel before formal deactivation or port-out is visible.</td><td>Usage decay, recharge-gap and active-SIM indicators, handled under lawful access and purpose limits.</td></tr>
+    <tr><td>Retention contact compliance</td><td>Report includes DPDP and TCCCPR controls in its proposed design.</td><td>Retention activity needs a reliable consent and opt-out gate, not just a churn score.</td><td>Consent state, purpose, DLT template, opt-out propagation and audit logs.</td></tr>
+  </tbody></table></div>
+  <h3>FMEA prioritisation</h3>
+  <p>The source report applies a Failure Mode and Effects Analysis using Severity × Occurrence × Detection. These scores are explicitly illustrative/hypothesis-based and should be recalibrated against internal data.</p>
+  <div class="bars">
+    <div class="barrow"><span>Pack withdrawal shock</span><div class="bartrack"><div class="barfill" style="width:100%"></div></div><span class="barvalue">441</span></div>
+    <div class="barrow"><span>Dual-SIM lapse</span><div class="bartrack"><div class="barfill" style="width:89%"></div></div><span class="barvalue">392</span></div>
+    <div class="barrow"><span>Indoor 5G degradation</span><div class="bartrack"><div class="barfill" style="width:76%"></div></div><span class="barvalue">336</span></div>
+    <div class="barrow"><span>Repeat support failure</span><div class="bartrack"><div class="barfill" style="width:71%"></div></div><span class="barvalue">315</span></div>
+    <div class="barrow"><span>Recharge abandonment</span><div class="bartrack"><div class="barfill" style="width:48%"></div></div><span class="barvalue">210</span></div>
+    <div class="barrow"><span>Non-compliant outreach</span><div class="bartrack"><div class="barfill" style="width:41%"></div></div><span class="barvalue">180</span></div>
+  </div>
+  <p class="small">RPN values are reproduced from the report’s FMEA (pages 21–23). They are not measured frequencies or validated Airtel risk scores.</p>
+</section>
+
+<section class="section" id="segments">
+  <div class="section-head"><div class="section-no">07</div><div><h2>Six customer segments, six different responses</h2><p class="sub">A single retention offer is unlikely to be right for every customer. The report proposes segment-specific treatment based on value and the type of friction.</p></div></div>
+  <div class="grid3">
+    <div class="segment"><div class="id">S1 · CONVERGED</div><h4>Airtel Black households</h4><p>Protect a multi-service relationship through proactive service recovery and priority care.</p><small>Highest illustrative CLV tier</small></div>
+    <div class="segment"><div class="id">S2 · POSTPAID</div><h4>Urban postpaid core</h4><p>Improve bill clarity, plan value and relevant service bundles.</p><small>High value; report cites 31.2m base</small></div>
+    <div class="segment"><div class="id">S3 · UPGRADE</div><h4>Top-decile prepaid candidates</h4><p>Identify heavy users who may value postpaid or a converged household plan.</p><small>Proposed upgrade cohort</small></div>
+    <div class="segment"><div class="id">S4 · CORE BATTLEGROUND</div><h4>Mid-tier value-sensitive prepaid</h4><p>Stabilise renewal, reduce price shock and improve pack continuity.</p><small>₹299–₹349 cohort in source analysis</small></div>
+    <div class="segment"><div class="id">S5 · HIGH FRICTION</div><h4>Network or support impacted</h4><p>Resolve the service issue before presenting a promotional offer.</p><small>Triggered by repeat contact, payment or network signals</small></div>
+    <div class="segment"><div class="id">S6 · LOW VALUE / DORMANCY</div><h4>Entry and dual-SIM risk</h4><p>Use low-cost reminders and self-service rather than expensive agent-led calls.</p><small>Protect acquisition and contact cost</small></div>
+  </div>
+  <p class="small">Segment CLV amounts and churn postures are modelled assumptions in the source report, not Airtel-published subscriber-level values.</p>
+</section>
+
+<section class="section" id="solution">
+  <div class="section-head"><div class="section-no">08</div><div><h2>The proposed solution: CX-RI</h2><p class="sub">Customer Experience and Retention Intelligence — a closed-loop process that senses risk, checks eligibility, resolves the issue and measures the incremental result.</p></div></div>
+  <p>The proposed CX-RI model combines near-real-time service events with nightly customer-level analytics. It does not treat a high churn-propensity score as permission to send an offer. The next-best-action process also considers customer value, the likely effect of an intervention, contact fatigue and communication eligibility.</p>
+  <div class="flow">
+    <div class="node"><em>01 · Signal ingestion</em>Billing, recharge, RAN, support, app and MNP events</div><div class="arrow">→</div>
+    <div class="node"><em>02 · Intelligence</em>Propensity, survival and causal uplift models</div><div class="arrow">→</div>
+    <div class="node"><em>03 · Decision gate</em>Next-best action, consent and contact rules</div><div class="arrow">→</div>
+    <div class="node"><em>04 · Execution</em>App, WhatsApp, SMS, network help and agent desk</div><div class="arrow">→</div>
+    <div class="node"><em>05 · Measurement</em>Holdout, 30/60/90-day survival and EBITDA lift</div>
+  </div>
+  <h3>What the intelligence layer does</h3>
+  <div class="grid2">
+    <div class="card"><h4>Churn propensity</h4><p>Estimates who may leave within 14 days. The report proposes separate treatment for voluntary MNP and silent dormancy.</p></div>
+    <div class="card"><h4>Survival analysis</h4><p>Estimates time-to-churn across tenure and plan cohorts, rather than treating churn as a single yes/no event.</p></div>
+    <div class="card"><h4>Causal uplift</h4><p>Estimates which customers are likely to stay because of a specific intervention. This helps avoid discounting customers who would have renewed anyway.</p></div>
+    <div class="card"><h4>Next-best-action</h4><p>Selects the lowest-cost suitable action, preferring service resolution over a discount where that is more relevant.</p></div>
+  </div>
+  <h3>Example: a failed recharge</h3>
+  <div class="flow">
+    <div class="node"><em>Trigger</em>Payment fails during 2FA</div><div class="arrow">→</div>
+    <div class="node"><em>Check</em>Confirm transaction and notification eligibility</div><div class="arrow">→</div>
+    <div class="node"><em>Recover</em>Send a pre-filled retry path</div><div class="arrow">→</div>
+    <div class="node"><em>Measure</em>Was the recharge completed within 24 hours?</div>
+  </div>
+  <h3>Proposed solution architecture</h3>
+  <div class="chartbox">
+    <svg viewBox="0 0 760 390" role="img" aria-label="Four-tier CX-RI proposed architecture">
+      <rect x="20" y="15" width="720" height="68" rx="10" fill="#f5f4f2" stroke="#dedbd7"/><text x="38" y="40" font-size="12" font-weight="700" fill="#222">1 · SIGNAL INGESTION</text><text x="38" y="62" font-size="11" fill="#555">RAN / 5G NMS · Billing / OCS · Airtel Thanks · 198 / Appellate CRM · MNP / spam signals</text>
+      <path d="M380 84 V105" stroke="#9a9a9a" stroke-width="2"/><path d="M374 99 L380 107 L386 99" fill="none" stroke="#9a9a9a" stroke-width="2"/>
+      <rect x="20" y="110" width="720" height="76" rx="10" fill="#eef2f6" stroke="#d6dee8"/><text x="38" y="137" font-size="12" font-weight="700" fill="#253d57">2 · INTELLIGENCE & COMPLIANCE CORE</text><text x="38" y="158" font-size="11" fill="#45596f">Feature store · Churn propensity / survival / uplift · Next-best-action · DPDP consent and TCCCPR suppression gate</text>
+      <path d="M380 187 V208" stroke="#9a9a9a" stroke-width="2"/><path d="M374 202 L380 210 L386 202" fill="none" stroke="#9a9a9a" stroke-width="2"/>
+      <rect x="20" y="213" width="720" height="68" rx="10" fill="#fbefef" stroke="#efd0d0"/><text x="38" y="239" font-size="12" font-weight="700" fill="#a91f29">3 · OMNICHANNEL EXECUTION</text><text x="38" y="260" font-size="11" fill="#61484a">Express recharge · Proactive outage / VoWiFi alerts · Unified Tier-2 agent desktop · Approved messaging</text>
+      <path d="M380 282 V303" stroke="#9a9a9a" stroke-width="2"/><path d="M374 297 L380 305 L386 297" fill="none" stroke="#9a9a9a" stroke-width="2"/>
+      <rect x="20" y="308" width="720" height="65" rx="10" fill="#edf4f0" stroke="#d2e4d9"/><text x="38" y="334" font-size="12" font-weight="700" fill="#226344">4 · CLOSED-LOOP MEASUREMENT</text><text x="38" y="355" font-size="11" fill="#496252">10% randomized holdout · 30/60/90-day survival · Incremental EBITDA · Audit and model monitoring</text>
+      <path d="M710 340 C750 340 750 148 724 148" fill="none" stroke="#d8242f" stroke-dasharray="5 4" stroke-width="2"/><text x="702" y="245" font-size="9" fill="#d8242f" text-anchor="end" transform="rotate(-90 702 245)">feedback and recalibration</text>
+    </svg>
+    <p class="small">Conceptual architecture proposed in the report. It is not a representation of Airtel’s verified production architecture.</p>
+  </div>
+</section>
+
+<section class="section" id="requirements">
+  <div class="section-head"><div class="section-no">09</div><div><h2>What the business would need</h2><p class="sub">The report turns the proposed operating model into a formal BRD and 18 user stories.</p></div></div>
+  <h3>Core business requirements</h3>
+  <div class="tablewrap"><table class="tbl"><thead><tr><th>Requirement</th><th>What it enables</th><th>Priority in source BRD</th></tr></thead><tbody>
+    <tr><td>Unified customer signal store</td><td>Join billing, network, CRM and MNP events with defined latency.</td><td><span class="tag fact">Must</span></td></tr>
+    <tr><td>14-day churn and uplift scoring</td><td>Separate risk from the likely incremental impact of an intervention.</td><td><span class="tag fact">Must</span></td></tr>
+    <tr><td>Failed recharge recovery</td><td>Trigger an eligible retry journey after payment failure.</td><td><span class="tag fact">Must</span></td></tr>
+    <tr><td>Proactive network remediation</td><td>Identify outage or chronic indoor issues and send relevant service guidance.</td><td><span class="tag fact">Must</span></td></tr>
+    <tr><td>Repeat-contact escalation</td><td>Move repeated unresolved cases to an agent with full context.</td><td><span class="tag fact">Must</span></td></tr>
+    <tr><td>Consent and suppression gate</td><td>Block promotional outreach when consent or contact rules are not satisfied.</td><td><span class="tag fact">Must</span></td></tr>
+    <tr><td>Randomized holdout</td><td>Measure incremental 30/60/90-day retention and EBITDA lift.</td><td><span class="tag fact">Must</span></td></tr>
+    <tr><td>Circle-level pricing sandbox</td><td>Test pack changes before nationwide rollout.</td><td><span class="tag hyp">Should</span></td></tr>
+  </tbody></table></div>
+  <p>The BRD also defines performance, availability, security, scalability, model monitoring and accessibility requirements. Its proposed examples include p95 event-to-action latency of 60 seconds, 99.95% availability for critical orchestration components and fail-closed promotional dispatch when the consent service is unavailable.</p>
+  <h3>Examples of user stories</h3>
+  <div class="grid2">
+    <div class="card"><h4>Subscriber</h4><p>“When my recharge fails, I want a simple retry option using the same pack so my service does not expire.”</p></div>
+    <div class="card"><h4>Maintenance / network operations</h4><p>“When a site issue affects customers for more than 30 minutes, I want affected subscribers identified so that service updates can be sent.”</p></div>
+    <div class="card"><h4>Customer support agent</h4><p>“I want to see prior complaints, network status and billing issues in one place so I can resolve the actual problem.”</p></div>
+    <div class="card"><h4>CFO</h4><p>“I want a randomized holdout for retention campaigns so that organic renewals are not counted as saved customers.”</p></div>
+  </div>
+</section>
+
+<section class="section" id="economics">
+  <div class="section-head"><div class="section-no">10</div><div><h2>Does the proposal make financial sense?</h2><p class="sub">The source report models an illustrative three-year case. These are programme assumptions, not Airtel-approved budgets or realised savings.</p></div></div>
+  <div class="chartbox"><div class="charttitle"><strong>Three-scenario business case</strong><span>3-year horizon · ₹ crore · assumptions from source report</span></div>
+    <div class="tablewrap" style="border:0;margin:0"><table class="tbl"><thead><tr><th>Metric</th><th>Worst case</th><th>Base case</th><th>Best case</th></tr></thead><tbody>
+      <tr><td>Initial CapEx</td><td>₹60.0</td><td>₹48.0</td><td>₹43.2</td></tr>
+      <tr><td>Annual steady-state OpEx</td><td>₹31.2</td><td>₹26.0</td><td>₹23.4</td></tr>
+      <tr><td>Annual gross benefits at steady state</td><td>₹50.0</td><td>₹115.0</td><td>₹185.0</td></tr>
+      <tr><td>3-year cumulative costs</td><td>₹153.6</td><td>₹126.0</td><td>₹113.4</td></tr>
+      <tr><td>3-year cumulative gross benefits</td><td>₹117.5</td><td>₹270.2</td><td>₹434.8</td></tr>
+      <tr><td>3-year net benefit</td><td>−₹36.1</td><td>+₹144.2</td><td>+₹321.4</td></tr>
+      <tr><td>ROI</td><td>−23.5%</td><td>+114.5%</td><td>+283.4%</td></tr>
+      <tr><td>NPV @ 10% WACC</td><td>−₹42.2</td><td>+₹106.8</td><td>+₹251.7</td></tr>
+      <tr><td>Simple payback</td><td>4.92 years</td><td>1.23 years</td><td>0.63 years</td></tr>
+    </tbody></table></div>
+    <div class="legend"><span><i class="swatch" style="background:#b8b8b8"></i>Worst case</span><span><i class="swatch" style="background:#d8242f"></i>Base case</span><span><i class="swatch" style="background:#263c55"></i>Best case</span></div>
+  </div>
+  <div class="callout"><strong>Base-case headline</strong>₹48 crore initial investment, ₹26 crore annual operating cost, ₹144.2 crore three-year net benefit, 114.5% three-year ROI and 1.23-year simple payback—entirely illustrative and dependent on internal validation of churn reduction, service savings and upgrade value.</div>
+  <h3>Where the benefits are assumed to come from</h3>
+  <div class="bars">
+    <div class="barrow"><span>Retention EBITDA</span><div class="bartrack"><div class="barfill" style="width:65%"></div></div><span class="barvalue">₹75 Cr</span></div>
+    <div class="barrow"><span>Support deflection</span><div class="bartrack"><div class="barfill" style="width:19%"></div></div><span class="barvalue">₹22 Cr</span></div>
+    <div class="barrow"><span>Postpaid / Black upgrades</span><div class="bartrack"><div class="barfill" style="width:16%"></div></div><span class="barvalue">₹18 Cr</span></div>
+  </div>
+  <p class="small">Steady-state annual gross benefits in the base case. The report models benefits ramping at 50%, 85% and 100% over Years 1–3. The components need to be validated against internal data and must not be described as achieved savings.</p>
+</section>
+
+<section class="section" id="measurement">
+  <div class="section-head"><div class="section-no">11</div><div><h2>How success should be measured</h2><p class="sub">A retention programme should measure customer outcomes and incremental financial value, not just campaign volume.</p></div></div>
+  <div class="tablewrap"><table class="tbl"><thead><tr><th>KPI</th><th>Baseline in report</th><th>Proposed target</th><th>Evidence status</th></tr></thead><tbody>
+    <tr><td>Monthly mobile churn</td><td>2.90%</td><td>≤2.65%–2.70%</td><td><span class="tag assume">Target illustrative</span></td></tr>
+    <tr><td>Voluntary MNP port-out rate</td><td>Internal baseline unavailable</td><td>15% reduction vs. Day-30 baseline</td><td><span class="tag gap">Data gap</span></td></tr>
+    <tr><td>90-day new-add survival</td><td>Internal baseline unavailable</td><td>+500 bps in pilot circles</td><td><span class="tag assume">Target illustrative</span></td></tr>
+    <tr><td>Failed 2FA recharge recovery</td><td>Internal baseline unavailable</td><td>≥35% automated recovery</td><td><span class="tag assume">Target illustrative</span></td></tr>
+    <tr><td>14-day repeat contact rate</td><td>Internal baseline unavailable</td><td>25% reduction</td><td><span class="tag assume">Target illustrative</span></td></tr>
+    <tr><td>Proactive outage alert coverage</td><td>Internal baseline unavailable</td><td>≥95% within 15 minutes</td><td><span class="tag assume">Target illustrative</span></td></tr>
+    <tr><td>DPDP / TCCCPR gate compliance</td><td>Mandatory control</td><td>100%</td><td><span class="tag fact">Zero-tolerance proposal</span></td></tr>
+  </tbody></table></div>
+  <h3>UAT: prove the workflow before a live pilot</h3>
+  <p>The report defines ten test scenarios, including failed 2FA recovery, proactive outage alerting, repeat-caller IVR bypass, unified agent visibility, consent-vault fail-closed behaviour, 90-day suppression, sleeping-dog suppression, holdout assignment, express recharge and digital itemised billing. The proposed 3-week UAT gate requires security sign-off, test coverage for all mandatory and regulatory cases, no open Severity 1 or 2 defects and formal business sign-off.</p>
+  <div class="callout"><strong>Critical measurement rule</strong>Keep a 10% stratified randomized holdout per circle and segment. Mandatory service and outage communication can still reach control customers, while promotional retention offers are suppressed. Compare 30-, 60- and 90-day survival to estimate incremental lift.</div>
+</section>
+
+<section class="section" id="roadmap">
+  <div class="section-head"><div class="section-no">12</div><div><h2>90-day implementation roadmap</h2><p class="sub">A proposed pilot sequence from December 2026 to February 2027, as specified in the source report.</p></div></div>
+  <div class="timeline">
+    <div class="phase"><h4>Days 1–30 · December 2026 — Foundation and quick wins</h4><p>Ingest 12 months of internal churn, MNP, support and network data into a masked analytics environment; close key data gaps; define consent and suppression controls; pilot failed-recharge recovery and repeat-caller IVR bypass in two circles.</p></div>
+    <div class="phase"><h4>Days 31–60 · January 2027 — Models, integration and governance</h4><p>Build separate prepaid MNP, prepaid dormancy and postpaid uplift models; connect network events to CRM; introduce a unified agent desktop; launch express recharge, digital itemised statements and the two-circle pricing sandbox.</p></div>
+    <div class="phase"><h4>Days 61–90 · February 2027 — UAT and live holdout pilot</h4><p>Complete ten UAT scenarios, security and peak-load testing; activate the closed-loop pilot with a 10% randomized holdout; test retailer incentives linked to 90-day survival; present results to the steering committee before any national scale decision.</p></div>
+  </div>
+  <div class="callout"><strong>Scale-up decision</strong>The report proposes using early survival lift, operational readiness, compliance and incremental EBITDA evidence to decide whether to expand from two pilot circles toward a national rollout. National rollout should not be treated as automatic.</div>
+</section>
+
+<section class="section" id="conclusion">
+  <div class="section-head"><div class="section-no">13</div><div><h2>Management recommendations</h2><p class="sub">Six practical actions drawn from the source report’s conclusion.</p></div></div>
+  <ol style="padding-left:20px;color:#3f3f3f">
+    <li style="margin:0 0 12px"><strong>Test pricing changes before scaling them.</strong> Retain the ₹299 mid-tier anchor as recommended in the report and require a controlled circle-level elasticity test before future pack withdrawals.</li>
+    <li style="margin:0 0 12px"><strong>Grow postpaid and Airtel Black through relevant value.</strong> Use usage and service context to identify prepaid customers who may benefit from a converged plan, rather than pushing a blanket upgrade offer.</li>
+    <li style="margin:0 0 12px"><strong>Resolve service problems before offering discounts.</strong> Connect network outages and recharge failures to proactive, useful service recovery.</li>
+    <li style="margin:0 0 12px"><strong>Measure causal retention lift.</strong> Embed uplift modelling and randomized holdout measurement so that the programme does not pay for customers who would have stayed anyway.</li>
+    <li style="margin:0 0 12px"><strong>Make consent and contact controls part of the design.</strong> Apply the report’s proposed DPDP and TCCCPR controls before any promotional contact.</li>
+    <li style="margin:0 0 12px"><strong>Reward durable customer relationships.</strong> Tie part of dealer incentives to Day-90 active recharge survival, not only gross SIM activations.</li>
+  </ol>
+  <div class="callout"><strong>Final takeaway</strong>Airtel’s opportunity is to move from reactive churn management to a service-led retention model. The strongest intervention is often not a discount: it is fixing the recharge, explaining the outage, resolving the complaint or making the next renewal easier.</div>
+</section>
+
+<section class="section" id="sources">
+  <div class="section-head"><div class="section-no">14</div><div><h2>Sources, scope and limitations</h2><p class="sub">This website is an accessible presentation of the uploaded 51-page capstone, not an independent re-audit of every cited source.</p></div></div>
+  <h3>Primary references listed in the report</h3>
+  <ul class="sources">
+    <li><a href="https://assets.airtel.in/static-assets/cms/investor/docs/quarterly_results/2026-27/Q2/Quarterly-IR-Pack-Bharti-Airtel-Consolidated.pdf" target="_blank" rel="noopener">Bharti Airtel — Q2 FY27 Consolidated Quarterly IR Pack</a></li>
+    <li><a href="https://assets.airtel.in/static-assets/cms/investor/docs/quarterly_results/2026-27/Q1/Quarterly-IR-Pack-Bharti-Airtel-Consolidated.pdf" target="_blank" rel="noopener">Bharti Airtel — Q1 FY27 Consolidated Quarterly IR Pack</a></li>
+    <li><a href="https://www.trai.gov.in/sites/default/files/2026-10/PR_No140of2026_0.pdf" target="_blank" rel="noopener">TRAI — Telecom Subscription Data, September 2026 (Press Release 140/2026)</a></li>
+    <li><a href="https://www.trai.gov.in/" target="_blank" rel="noopener">Telecom Regulatory Authority of India (TRAI)</a></li>
+    <li><a href="https://www.opensignal.com/" target="_blank" rel="noopener">Opensignal — India mobile network experience research</a></li>
+    <li><a href="https://www.airtel.in/press-release/02-2026/airtel-plans-major-push-to-build-a-high-scale-nbfc-platform/" target="_blank" rel="noopener">Airtel — NBFC platform announcement referenced in the report</a></li>
+  </ul>
+  <div class="disclaimer">
+    <h3>Important limitations</h3>
+    <p><strong>Public-data scope:</strong> The source report says it did not have access to internal Airtel CRM, customer-level churn records, 198 call reasons, MNP port-out reasons, network telemetry at subscriber level, audited app-review corpora, internal CAC or actual CLV.</p>
+    <p><strong>Hypotheses:</strong> The relationships between tariff changes, indoor 5G experience, payment friction, repeat support contacts and churn require internal cohort analysis and controlled testing. Timing and association do not establish causation.</p>
+    <p><strong>Financial model:</strong> The ₹48 crore CapEx, ₹26 crore annual OpEx, annual benefits and ROI/NPV/payback are illustrative assumptions in the report. They are not Airtel-approved budgets or realised returns.</p>
+    <p><strong>Historical snapshot:</strong> Metrics and regulatory statements are presented as the uploaded report’s November 2026 research snapshot. Reconfirm current values, legal applicability and source links before external publication or business use.</p>
+    <p><strong>Independence:</strong> This is an independent academic/portfolio case study. It is not commissioned, endorsed or validated by Bharti Airtel Limited.</p>
+  </div>
+</section>
+<div class="footer"><div style="display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap"><span>Bharti Airtel India Mobile Services · Customer Experience & Retention</span><span>Prepared from the uploaded capstone · November 2026</span><a href="#top" class="toplink">Back to top ↑</a></div></div>
+</main></div>
+<script>
+// Highlight the current section in the contents list.
+const links=[...document.querySelectorAll('.toc a')];
+const sections=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id));}})},{rootMargin:'-20% 0px -70% 0px'});
+sections.forEach(s=>observer.observe(s));
+</script>
+</body></html>
